@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import {DragDropContext, Draggable, Droppable} from "react-beautiful-dnd"
+import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd"
 import CityItem from "./CityItem"
 
 function TreeView() {

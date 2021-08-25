@@ -2,7 +2,7 @@
 // https://github.com/netlify/netlify-lambda/issues/43#issuecomment-444618311
 
 import axios from "axios"
-export async function handler(event, context) {
+export async function handler() {
     try {
         const response = await axios.get("https://k1261e599api.herokuapp.com/city/", { headers: { Accept: "application/json" } })
         const data = response.data
@@ -14,7 +14,7 @@ export async function handler(event, context) {
         console.log(err) // output to netlify function log
         return {
             statusCode: 500,
-            body: JSON.stringify({ data: err.message }) // Could be a custom message or object i.e. JSON.stringify(err)
+            body: JSON.stringify({ data: err.message })
         }
     }
 }

@@ -1,10 +1,10 @@
-.city-list {
-    list-style-type: none !important;
+:root{
+    --main-color: #ffffff;
+    --secondary-color: #4472c4;
 }
 
 .city-item {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 16px 0 0 16px;
 }
 
 .wrapper {
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     height: 52px;
-    color: #fff;
-    background-color: #4472c4;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
     margin: 5px 15px 5px 15px;
 }
